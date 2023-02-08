@@ -35,7 +35,7 @@ header {
     margin-right: var(--margin-right10);
 }
 
-.type-menu li:hover {
+li:hover > a {
     text-decoration: underline;
 }
 
@@ -58,10 +58,14 @@ div.layout{
 
 div.column {
     width: calc(100% / 3 - (30px / 3));
-    position: relative;
+    margin-bottom: 2rem;
 }
 
 /* image */
+
+.img-item{
+    position: relative;
+}
 
 img.hidden-img {
     display: none;
@@ -91,7 +95,7 @@ span.discount-price {
 
 p.label {
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
 }
 
 span.label {

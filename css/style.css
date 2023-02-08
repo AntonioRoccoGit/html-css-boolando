@@ -4,12 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
     max-width: 100%;
 }
-
 
 /* HEADER */
 
@@ -78,7 +78,7 @@ h3.item-description {
 }
 
 h5.price {
-    color: red;
+    color: #FF0000;
 }
 
 span.discount-price {
@@ -101,11 +101,11 @@ span.label {
 }
 
 span.green {
-    background-color: rgb(3, 161, 3);
+    background-color: #008000;
 }
 
 span.red {
-    background-color: red;
+    background-color: #FF0000;
 }
 
 span.heart {
@@ -116,6 +116,35 @@ span.heart {
     right: 0;
     background-color: white;
     
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.footer-information h2{
+    font-size: .6rem;
+}
+
+.footer-information li, .footer-social li {
+    margin-right: var(--margin-right10);
+    font-size: .45rem;
+    margin-top: 6px;
+}
+
+/* footer social */
+
+.fa-brands {
+    font-size: .8rem;
+}
+
+.footer-social h5{
+   font-size: .6rem;
 }
 
 /* COMMON */

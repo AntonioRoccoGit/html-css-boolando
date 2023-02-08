@@ -17,6 +17,8 @@ header {
     width: 100%;
     padding: 0.6rem 0;
     background-color: #FF6900;
+    position: fixed;
+    z-index: 2;
 }
 
 .box.flex {
@@ -33,6 +35,10 @@ header {
     margin-right: var(--margin-right10);
 }
 
+.type-menu li:hover {
+    text-decoration: underline;
+}
+
 .shopping-menu li {
     display: inline-block;
     margin-left: var(--margin-right10);
@@ -40,27 +46,77 @@ header {
 
 /* MAIN */
 
+ div.box.prova {
+    padding-top: var(--header-height);
+}
+
 div.layout{
     flex-wrap: wrap;
-    margin-top: var(--margin-top);
+    margin-top: 60px;
     gap: 15px;
 }
 
 div.column {
     width: calc(100% / 3 - (30px / 3));
-    /* debug */
-    border: 1px dashed blueviolet;
+    position: relative;
 }
 
+/* image */
 
+img.hidden-img {
+    display: none;
+}
 
+/* produc text */
 
+h5.brand {
+    font-weight: 200;
+}
 
+h3.item-description {
+    text-transform: uppercase;
+}
 
+h5.price {
+    color: red;
+}
 
+span.discount-price {
+    color: black;
+    text-decoration-line: line-through;
+    margin-left: var(--margin-right10);
+}
 
+/* label */
 
+p.label {
+    position: relative;
+    bottom: 100px;
+}
 
+span.label {
+    font-size: .8rem;
+    padding: 2px 6px;
+    color: white;
+}
+
+span.green {
+    background-color: rgb(3, 161, 3);
+}
+
+span.red {
+    background-color: red;
+}
+
+span.heart {
+    font-size: 1.4rem;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    
+}
 
 /* COMMON */
 
@@ -71,8 +127,6 @@ div.column {
 .box {
     width: 60%;
     margin: 0 auto;
-    /* debug */
-    border: 1px dashed black;
 }
 
 a {
@@ -93,3 +147,16 @@ ul {
     --margin-top: 2rem;
 }
 
+/* HOVER ACTION */
+
+.img-item:hover .hidden-img {
+    display: inline-block;
+}
+
+.img-item:hover .front-img {
+    display: none;
+}
+
+span.heart:hover {
+    color: red;
+}
